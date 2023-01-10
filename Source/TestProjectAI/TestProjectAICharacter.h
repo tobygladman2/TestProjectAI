@@ -61,5 +61,20 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	UPROPERTY()
+		int SoulsCount = 0;
+
+	UFUNCTION(BlueprintCallable)
+		void SetSoulsCount(int Value);
+
+	UFUNCTION(BlueprintCallable)
+		int GetSoulsCount();
+
+	UPROPERTY()
+		TArray<APawn*> SoulsArray;
+
+	UFUNCTION(BlueprintCallable)
+		TArray<APawn*> ReturnSoulsArray();
 };
 

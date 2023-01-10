@@ -127,3 +127,15 @@ void ATestProjectAICharacter::MoveRight(float Value)
 		AddMovementInput(Direction, Value);
 	}
 }
+
+void ATestProjectAICharacter::SetSoulsCount(int value) {
+	SoulsCount = value;
+}
+
+int ATestProjectAICharacter::GetSoulsCount() {
+	return SoulsCount;
+}
+
+TArray<APawn*> ATestProjectAICharacter::ReturnSoulsArray() {
+	return SoulsArray;
+}
