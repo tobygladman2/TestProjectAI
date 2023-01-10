@@ -58,8 +58,8 @@ void ATestProjectAICharacter::SetupPlayerInputComponent(class UInputComponent* P
 {
 	// Set up gameplay key bindings
 	check(PlayerInputComponent);
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	/*PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);*/
 
 	PlayerInputComponent->BindAxis("Move Forward / Backward", this, &ATestProjectAICharacter::MoveForward);
 	PlayerInputComponent->BindAxis("Move Right / Left", this, &ATestProjectAICharacter::MoveRight);
